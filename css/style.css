@@ -1,0 +1,998 @@
+/* BARRA DE NAVEGACIÓN: COLOR DE FONDO, ELIMINA LAS VIÑETAS, MARGEN PADDING */
+nav  ul {
+    list-style-type: none;
+    padding: 10px;
+    background-color: rgba(10, 1, 56, 0.409);
+    margin:0%;
+    display: flex;
+    text-align: center;
+
+  }
+ 
+  /* BARRA DE N|AVEGACIÓN: TEXTO */
+  nav li a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 20px;
+  }
+
+.navbar-iconos{
+  height: 68px;
+  display: inline-flex;
+}
+.navbar-iconos ul li  {
+  display: flex;
+  position: relative;
+  bottom: 8px;
+  justify-content: space-between;
+}
+  .navbar{
+    display: inline-flex;
+    height: 68px;
+    width: 100%;
+    background-color: rgba(10, 1, 56, 0.409);
+  }
+header {
+  background-color:  rgba(10, 1, 56, 0.409);
+}
+body{
+  overflow-x: hidden;
+  margin: 0%;
+  padding: 0%;
+  background-image: url(/img/fondodefinitivo.jpg);
+}
+.footerGrid {
+  background-color:  rgb(10, 1, 56, 0.409) ;
+}
+.banner{
+  background-color: black; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 300px;
+  width:250%;
+}
+.map{
+  outline: 2px solid blue;
+  margin: 5em auto;
+  margin-top:10px;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+}
+.map iframe{
+  width: 100%;
+  height: 100%;
+}
+.encontranos{
+  font-family:'Montserrat', sans-serif;
+  color:aliceblue;
+  background-color:  rgb(10, 1, 56, 0.409);
+  margin-bottom: 20px;
+  font-size: 25px;
+  overflow-x: hidden;
+}
+/* TEXTOS */
+.EnlacesFooter{
+  text-decoration: none;
+  font-size: 16px;
+  font-family:'Montserrat', sans-serif;
+  color: aliceblue;
+ }
+ .EnlacesFooter li a {
+  color: aliceblue;
+ }
+h1 {
+    color:rgb(200, 231, 200);
+    font-size: 40px;
+    position: right;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+}
+
+.colorBlue {
+    text-align: center;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    font-size: 53px;
+    margin: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: aliceblue;
+  font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    background-color: rgba(11, 3, 25, 0.302);
+    margin: 0px;
+    text-align: center;
+}
+.colorBlanco{
+  display: grid;
+  font-size: 25px;
+  color: aliceblue;
+  margin-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+h4 .footerparrafo {
+  font-family:'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+/* LISTAS DE QUIENES SOMOS */
+li{
+  display: inline; 
+}
+
+ol{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap ;
+  color:rgb(255, 255, 255);
+}
+.primer-lista {
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+}
+
+
+.segunda-lista{
+  text-align: center;
+  color: aliceblue;
+  margin: 70px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+  /* DESKTOP */
+@media (min-width:1024px){
+  body{
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    background-image: url(/img/fondodefinitivo.jpg);
+  }
+  .banner{
+    background-color: black; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300px;
+    width:250%;
+  }
+    .grid{
+        display:grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;}
+    header{grid-area: header;}
+    main{grid-area: main;}
+    footer{grid-area: footer;}
+
+    .principal{
+        display: grid;
+        grid-template-areas: 
+        "navbar navbar navbar"
+        "encabezado encabezado encabezado"
+        "encabezado2 encabezado2 encabezado2"
+        "colorBlanco imagen1 imagen2";
+        grid-template-rows: auto auto ;
+        grid-template-columns: 45% 35% 25%;
+    }
+    .encabezado{grid-area: encabezado;}
+    .encabezado2{grid-area: encabezado2;}
+    .colorBlanco{grid-area: colorBlanco;}
+    .imagen1{grid-area: imagen1;}
+    .imagen2{grid-area: imagen2;}
+
+    .footerGrid {
+          display: grid;
+        grid-template-areas: 
+        "logo redesSociales footerParrafo"
+        "logo redesSociales footerParrafo";
+        grid-template-rows: auto auto;
+        grid-template-columns: 25% 50% 25%;
+ }
+   .logo{grid-area: logo;}
+   .redessociales{grid-area: redesSociales;
+  background-color: aqua;
+  position: relative;
+  width: 300px;
+  }
+   .footerparrafo{grid-area: footerParrafo;}
+   .tituloContacto{grid-area:tituloContacto;}
+   .form{grid-area:form;}
+   .datosContacto{grid-area: datosContacto;}
+.enlace { 
+  color: aliceblue;
+  font-size: 30px;}
+
+.artesanias {
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "titulo2 titulo2 titulo2";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto
+}
+.container{
+  display: grid;
+grid-template-areas: 
+"tarjeta1 tarjeta2 tarjeta3"
+"tarjeta4 tarjeta5 tarjeta6";
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto auto auto auto auto;
+justify-content: space-evenly;
+margin-left:  100px;
+margin-bottom: 25px;
+gap: 40px;
+}
+.navegation-mobile {
+  display: none;
+}
+
+.redesSociales {
+  background-color:  rgb(7, 4, 24);
+  border-radius: 30px;
+  width: 100px;
+}
+/* FOTOS */
+
+.product {
+  position:relative;
+  width: 240px;
+  top: 10px;
+  height: 200px;
+  border-radius: 20px;
+}
+.product2 {
+position: relative;
+width: 240px;
+height: 200px;
+border-radius: 20px;
+top: 10px;
+
+}
+/*Formulario*/
+input:focus{
+  height: 50px;
+  font: size 20px;
+  background-color:lightseagreen;
+}
+
+input, select{
+  font-size: 20px;
+}
+.form {
+  display: inline-flexbox;
+  position: relative;
+  text-align: center;
+}
+.opciones {
+  color: aliceblue;
+  font-size: 24px;
+}
+.emailposition{
+  display: inline-flexbox;
+  text-align: center;
+  margin-left: 39%;
+  margin-top: 10px;
+  position: relative ;
+
+}
+/* inicio sesion */
+form {
+  padding: 20px;
+  border-radius: 5px;
+}
+.iniciosesion{
+  color: aliceblue;
+}
+.correo .contrase{
+  color: aliceblue;
+  background-color: #13063294;
+ }
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input[type="email"],
+input[type="password"] {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+input[type="submit"],
+input[type="button"] {
+  background-color: #090e5adf;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #091d3b86;
+}
+  /* fin inicio sesion */
+
+  .enlace { 
+    color: aliceblue;
+    font-size: 30px;}
+  
+.titulo {
+    grid-area: titulo;
+  }
+  .titulo2 {
+    grid-area: titulo2;
+  }
+  .tarjeta1 {
+    grid-area: tarjeta1;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 300px;
+    width: 250px;
+  }
+.tarjeta2 {
+    grid-area: tarjeta2;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 300px;
+    width: 250px;
+  }
+  .tarjeta3 {
+    grid-area: tarjeta3;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 300px;
+    width: 250px;
+  }
+  .tarjeta4 {
+    grid-area: tarjeta4;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 300px;
+    width: 250px;
+  }
+  .tarjeta5 {
+    grid-area: tarjeta5;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 300px;
+    width: 250px;
+  }
+  .tarjeta6 {
+    grid-area: tarjeta6;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 300px;
+    width: 250px;
+  }
+
+  .boton {
+    position: relative;
+    bottom: 20px;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+    }
+    .navbar-iconos{
+      height: 68px;
+      display: inline-flex;
+    }
+    .navbar-iconos ul li  {
+      display: flex;
+      position: relative;
+      bottom: 8px;
+      justify-content: space-between;
+    }
+
+/* TABLET */
+@media (min-width:769px) and (max-width:1023px){
+  body{
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    background-image: url(/img/fondodefinitivo.jpg);
+  }
+  .banner{
+    background-color: black; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300px;
+    width:250%;
+  }
+    .grid{
+      display:grid;
+      grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto;}
+  header{grid-area: header;}
+  main{grid-area: main;}
+  footer{grid-area: footer;}
+  
+  .principal{
+      display: grid;
+      grid-template-areas: 
+      "navbar navbar"
+      "encabezado encabezado"
+      "encabezado2 encabezado2"
+      "colorBlanco colorBlanco"
+      "imagen1 imagen2";
+      grid-template-rows: auto auto ;
+      grid-template-columns: 50% 50%;
+  }
+  .encabezado{grid-area: encabezado;}
+  .encabezado2{grid-area: encabezado2;}
+  .colorBlanco{grid-area: colorBlanco;}
+  .imagen1{grid-area: imagen1;}
+  .imagen2{grid-area: imagen2;}
+  
+  .footerGrid {
+        display: grid;
+      grid-template-areas: 
+      "logo redesSociales footerParrafo"
+      "logo redesSociales footerParrafo";
+      grid-template-rows: auto auto;
+      grid-template-columns: 25% 50% 25%;
+      margin-top: 250px;
+  }
+  .logo{grid-area: logo;}
+  .redessociales{grid-area: redesSociales;}
+  .footerparrafo{grid-area: footerParrafo;}
+  .tituloContacto{grid-area:tituloContacto;}
+  .form{grid-area:form;}
+  .datosContacto{grid-area: datosContacto;}
+  .enlace { 
+    color: aliceblue;
+    font-size: 30px;}
+  
+  .artesanias {
+  display: grid;
+  grid-template-areas: 
+  "titulo titulo titulo"
+  "titulo2 titulo2 titulo2";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto
+  }
+  .container{
+  display: grid;
+  grid-template-areas: 
+  "tarjeta1 tarjeta2"
+  "tarjeta3 tarjeta4"
+  "tarjeta5 tarjeta6";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  justify-content: space-evenly;
+  margin-left:  100px;
+  margin-bottom: 25px;
+  gap: 40px;
+  }
+  
+
+  .redesSociales {
+    background-color:  rgb(7, 4, 24);
+    border-radius: 30px;
+    width: 100px;
+  }
+  /* FOTOS */
+  
+  .product {
+    position:relative;
+    width: 240px;
+    top: 10px;
+    height: 200px;
+    border-radius: 20px;
+  }
+  .product2 {
+  position: relative;
+  width: 240px;
+  height: 200px;
+  border-radius: 20px;
+  top: 10px;
+  }
+  
+  .titulo {
+  grid-area: titulo;
+  }
+  .titulo2 {
+  grid-area: titulo2;
+  }
+  .tarjeta1 {
+  grid-area: tarjeta1;
+  background-color: aliceblue;
+  border: 6px solid rgb(228, 199, 199);
+  border-radius: 20px;
+  text-align: center;
+  height: 300px;
+  width: 250px;
+  }
+  .tarjeta2 {
+  grid-area: tarjeta2;
+  background-color: aliceblue;
+  border: 6px solid rgb(228, 199, 199);
+  border-radius: 20px;
+  text-align: center;
+  height: 300px;
+  width: 250px;
+  }
+  .tarjeta3 {
+  grid-area: tarjeta3;
+  background-color: aliceblue;
+  border: 6px solid rgb(228, 199, 199);
+  border-radius: 20px;
+  text-align: center;
+  height: 300px;
+  width: 250px;
+  }
+  .tarjeta4 {
+  grid-area: tarjeta4;
+  background-color: aliceblue;
+  border: 6px solid rgb(228, 199, 199);
+  border-radius: 20px;
+  text-align: center;
+  height: 300px;
+  width: 250px;
+  }
+  .tarjeta5 {
+  grid-area: tarjeta5;
+  background-color: aliceblue;
+  border: 6px solid rgb(228, 199, 199);
+  border-radius: 20px;
+  text-align: center;
+  height: 300px;
+  width: 250px;
+  }
+  .tarjeta6 {
+  grid-area: tarjeta6;
+  background-color: aliceblue;
+  border: 6px solid rgb(228, 199, 199);
+  border-radius: 20px;
+  text-align: center;
+  height: 300px;
+  width: 250px;
+  }
+  
+  .boton {
+  position: relative;
+  bottom: 20px;
+  font-size: 16px;
+  }
+  /* barra de iconos */
+  .navegation-mobile {
+    overflow: hidden;        
+  background-color: #000000;
+  position:relative;
+  bottom: 0;
+  width: auto;
+}
+
+.navegation-mobile a {
+  float: center;
+  display: block;
+  color: aliceblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  overflow: none;
+}
+.navegation-mobile a:hover {
+  background-color: #111;
+}
+
+.navegation-mobile a.active {
+  background-color: #0a05409e;
+}
+.navegation-mobile .iconos {
+  display: flex;
+  justify-content: space-evenly;
+}
+  }
+  
+/* MOBILE */
+@media (max-width:768px){
+  body{
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    background-image: url(/img/fondodefinitivo.jpg);
+  }
+  .banner{
+    background-color: black; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300px;
+    width:auto;
+  }
+    main, header, footer {
+     display: flex;
+     align-items: center;
+    }
+    .map{
+      outline: 2px solid blue;
+      margin: 1fr;
+      margin-top:10px;
+      width: 30px;
+      height: 50px;
+      align-items: center;
+      overflow-x:hidden;
+
+    }
+    .encontranos{
+      font-family:'Montserrat', sans-serif;
+      color:aliceblue;
+      background-color:  rgb(10, 1, 56, 0.409);
+      margin-bottom: 20px;
+      font-size: 25px;
+      overflow-x: hidden;
+    }
+    .footerGrid {
+      background-color: rgb(10, 1, 56, 0.409);
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+.redesSociales {
+  display: flex;
+  position: relative;
+  top: 50px;
+  background-color:  rgb(10, 1, 56, 0.409);
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+    .redesSociales,
+    .EnlacesFooter {
+      display: flex;
+      flex-direction: row;
+    }
+    .footerparrafo{
+     font-family:'Montserrat', sans-serif;
+     justify-content: center;
+     color: aliceblue;
+     font-size: 18px;
+     margin-bottom: 150px;
+   }
+  
+   .navbar {
+    flex-direction: column;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+    background-color:  rgb(10, 1, 56, 0.409);
+    overflow-x: hidden;
+  }
+  header {
+    background-color: rgb(10, 1, 56, 0.409);
+  }
+  .navbar-enlaces {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-enlaces li {
+    text-align: center;
+  }
+
+   .navbar .navbar-iconos{
+     display: none;
+   }
+   main {
+    margin-top: 220px;
+  }
+   /* barra de iconos */
+   .navegation-mobile {
+    overflow: hidden;        
+  background-color: #000000;
+  position:relative;
+  bottom: 0;
+  width: auto;
+}
+
+.navegation-mobile a {
+  float: center;
+  display: block;
+  color: aliceblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  overflow: none;
+}
+.navegation-mobile a:hover {
+  background-color: #111;
+}
+
+.navegation-mobile a.active {
+  background-color: #0a05409e;
+}
+.navegation-mobile .iconos {
+  display: flex;
+  justify-content: space-evenly;
+}
+.fa-user {
+  font-size: 20px;
+  overflow-x: hidden;
+}
+.fa-cart-shopping {
+  font-size: 20px;
+  overflow-x: hidden;
+}
+
+.fa-home {
+  font-size: 20px;
+  overflow-x: hidden;
+}
+   /* logo */
+  /*  .logo{
+     width: 50px;
+     height: 50px;
+     margin: 0 auto;
+   }
+    header{
+     position: relative;
+     display: flex;
+     width: 100%;
+    } */
+   
+    /* Tarjetas */
+    .tarjeta1 {
+     grid-area: tarjeta1;
+     background-color: aliceblue;
+     border: 6px solid rgb(228, 199, 199);
+     border-radius: 20px;
+     text-align: center;
+     height: 300px;
+     width: 250px;
+     }
+     .tarjeta2 {
+     grid-area: tarjeta2;
+     background-color: aliceblue;
+     border: 6px solid rgb(228, 199, 199);
+     border-radius: 20px;
+     text-align: center;
+     height: 300px;
+     width: 250px;
+     }
+     .tarjeta3 {
+     grid-area: tarjeta3;
+     background-color: aliceblue;
+     border: 6px solid rgb(228, 199, 199);
+     border-radius: 20px;
+     text-align: center;
+     height: 300px;
+     width: 250px;
+     }
+     .tarjeta4 {
+     grid-area: tarjeta4;
+     background-color: aliceblue;
+     border: 6px solid rgb(228, 199, 199);
+     border-radius: 20px;
+     text-align: center;
+     height: 300px;
+     width: 250px;
+     }
+     .tarjeta5 {
+     grid-area: tarjeta5;
+     background-color: aliceblue;
+     border: 6px solid rgb(228, 199, 199);
+     border-radius: 20px;
+     text-align: center;
+     height: 300px;
+     width: 250px;
+     }
+     .tarjeta6 {
+     grid-area: tarjeta6;
+     background-color: aliceblue;
+     border: 6px solid rgb(228, 199, 199);
+     border-radius: 20px;
+     text-align: center;
+     height: 300px;
+     width: 250px;
+     }
+     
+     .boton {
+       position: relative;
+       bottom: 20px;
+       font-size: 16px;
+       border-radius: 25px;
+     }
+     .encabezado .encabezado2{display:flex;
+        flex-direction: column; 
+     justify-content: center }
+   body{
+     overflow-x: hidden;
+   }
+   main {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   a:hover{
+     color:blueviolet;
+     font-size: 20px;
+   }
+   
+   
+   /* FORMULARIO */
+   
+   input:focus{
+     height: 50px;
+     font: size 16px;
+     background-color:lightseagreen;
+     color:cue-region;
+   }
+   .correo{
+    color: aliceblue;
+   }
+   .contrase{
+    color: aliceblue;
+   }
+   .form {
+    display: inline-flexbox;
+    position: relative;
+    text-align: center;
+  }
+   /* TEXTOS */
+   h1 {
+     color:rgb(200, 231, 200);
+     font-size: 15px;
+     font-family:'Montserrat', sans-serif;
+   }
+   .colorBlanco{
+     display: grid;
+     font-size: 15px;
+     text-align: center;
+     color: aliceblue;
+     font-family: 'Montserrat', sans-serif;
+   }
+   .primer-lista {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 15px;
+   }
+   .segunda-lista {
+     color: aliceblue;
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 15px;
+   } 
+   
+   .colorBlue {
+     text-align: center;
+   }
+   h2 h3{
+     display: flex;
+     justify-content: center;
+     font-family: 'Montserrat', sans-serif;
+     color: aliceblue;
+     font-size: 15px;
+     margin: 0px;
+     text-align: center;
+   }
+   .titulo2{
+    font-size: 20px;
+   }
+   
+   /* LISTAS DE QUIENES SOMOS */
+   li{
+     display: inline; 
+     padding: 10px;
+     margin: 10px;
+   }
+   
+   ol {
+     display: flex;
+     flex-direction: column;
+     flex-wrap:wrap ;
+     color:rgb(255, 255, 255);
+   }
+  
+   .enlace { 
+     color: aliceblue;
+     font-size: 30px;}
+   
+   /* FORMULARIO */
+   input, select{
+     font-size: 20px;
+   }
+   .form {
+     display: inline-flexbox;
+     position: relative;
+     text-align: center;
+   }
+   .opciones {
+     color: aliceblue;
+     font-size: 24px;
+   }
+   /* FOTOS */
+   .imagen1 {
+     display: flex;
+     justify-content: center;
+     position: relative;
+     margin-bottom: 80px;
+   }
+   .imagen2 {
+   display: flex;
+   justify-content: center;
+   position: relative;
+   }
+   .product {
+     position:relative;
+     width: 240px;
+     top: 10px;
+     height: 200px;
+     border-radius: 20px;
+   }
+   .product2 {
+   position: relative;
+   width: 240px;
+   height: 200px;
+   border-radius: 20px;
+   top: 10px;
+   
+   }
+   .container{
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+     flex-wrap: wrap;
+   }
+   .tarjetas{
+     display: flex;
+     overflow: none;
+     position: relative;
+     flex-wrap: wrap;
+     row-gap: 3fr;
+     flex-flow: row wrap;
+     justify-content:right;
+   
+   }
+   }
+   
+     
+   
+   
+   
+   
